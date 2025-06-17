@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #22b6f0;
+  background: linear-gradient(to bottom, #da3b9f, #ff9c41);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+.nav-container {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.nav-pill {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid 1px white;
+  backdrop-filter: blur(8px);
+  border-radius: 999px;
+}
+
+.nav-pill a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.nav-pill a:hover {
+  text-decoration: underline;
+}
+
+.app-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 25px;
+  margin-bottom: 2rem;
+}
+
+.download-btn {
+  background: rgba(255, 255, 255, 0.3);
+  border: solid 1px white;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.25rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.download-btn:hover {
+  transform: scale(1.05);
+}
+
+.navbar-collapse {
+  background-color: transparent !important;
+  backdrop-filter: none !important;
+}
+
+
+.navbar-nav .nav-link {
+  margin: 0 0.5rem;
+}
+.about-section {
+  margin-top: 2%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.about-section .container {
+  max-width: 100%;
+}
+.about-section .card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.about-section .card:hover {
+  transform: translateY(-5px);
+}
+
+
+.intro-section{
+      margin-top: 15%;
+
+}
+
+.privacy-section {
+  margin-top: 3%;
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.privacy-section .container {
+  max-width: 100%;
+}
+
+.scroll-down {
+  margin-top: 6%;
+  animation: bounce 2s infinite;
+}
+
+.arrow-circle {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.arrow-circle:hover {
+  transform: scale(1.1);
+}
+
+.privacy-section .card {
+  background-color: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border-radius: 2rem;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.privacy-section .card:hover {
+  transform: translateY(-5px);
+}
+
+a {
+  text-decoration: none;
+  color:white
+}
+
+.nav-link {
+  text-decoration: none;
+}
+#photos {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 1rem;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: start;
+  -webkit-overflow-scrolling: touch;
+  }
+
+
+#photos img.screenshot {
+  flex: 0 0 auto;
+  width: 80vw;
+  max-width: 350px;
+  scroll-snap-align: center;
+  border-radius: 20px;
+  transition: transform 0.3s ease;  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
+
+
+
+#photos img.screenshot:hover {
+  transform: scale(1.03);
+}
+
+
+@media (max-width: 1137px) {
+  .scroll-down {
+ display: none;
+} 
+  }
+  
+  @media (min-width: 768px) {
+  #photos img.screenshot {
+    flex: 0 0 auto;
+    width: 300px;
+  }
+}
+
