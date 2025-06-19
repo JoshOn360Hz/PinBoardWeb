@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {    // Intersection Observer for fade-in animations
+document.addEventListener('DOMContentLoaded', function() {    
     const observerOptions = {
         threshold: 0.2,
         rootMargin: '0px 0px -100px 0px'
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {    // Intersection Ob
     }, observerOptions);
 
     const animatedElements = document.querySelectorAll('.fade-in-up, .fade-in-left, .fade-in-right');
-    animatedElements.forEach(el => observer.observe(el));    // Text reveal animation for screenshots section (text only, images stay visible)
+    animatedElements.forEach(el => observer.observe(el));    
     const textRevealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -34,14 +34,17 @@ document.addEventListener('DOMContentLoaded', function() {    // Intersection Ob
     const screenshotsSection = document.querySelector('.screenshots-section');
     if (screenshotsSection) {
         textRevealObserver.observe(screenshotsSection);
-    }
-
+    }   
+    const navbar = document.querySelector('.navbar');
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
-                const offsetTop = target.offsetTop - navbar.offsetHeight;
+              
+                const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                const offsetTop = target.offsetTop - navbarHeight;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
