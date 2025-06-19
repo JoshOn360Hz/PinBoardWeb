@@ -777,3 +777,11 @@ body {
 .footer {
   margin-top: -1px;
 }
+
+@media (max-width:993px) {
+
+.floating-image,.privacy-visual{
+  display: none !important;
+}
+
+}
