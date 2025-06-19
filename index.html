@@ -3,201 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pinboard</title>  
+  <title>Pinboard</title>    
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link href="style.css" rel="stylesheet">
-<link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
-<link rel="shortcut icon" href="/src/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="PinBoard" />
-<link rel="manifest" href="/src/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/src/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+  <link rel="shortcut icon" href="/src/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/src/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="PinBoard" />
+  <link rel="manifest" href="/src/site.webmanifest" />
 </head>
 <body>
-<nav class="navbar navbar-expand-lg bg-transparent fixed-top mt-3 me-3" style="z-index: 1030;">
-  <div class="ms-auto d-flex align-items-center">
-    <div class="nav-pill px-4 py-2 d-flex align-items-center">
-      <button class="navbar-toggler border-0 me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCumulus">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Pinboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCumulus">
-        <ul class="navbar-nav bg-transparent d-flex flex-row">
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" href="#privacy">Privacy</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-white"href="mailto:JoshCumulus@proton.me?subject=Contacting%20Cumulus&body=Hi%2C%20I%20have%20a%20question...">Contact</a>
-          </li>
-         
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        
+          <li class="nav-item"><a class="nav-link" href="#privacy">Privacy</a></li>
+          <li class="nav-item"><a class="nav-link" href="mailto:JoshCumulus@proton.me?subject=Contacting%20Cumulus&body=Hi%2C%20I%20have%20a%20question...">Contact</a></li>
         </ul>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  </div>
-  <section class="intro-section py-5">
-  <div class="container text-center">
-    <img src="src/logo.png" alt="Pinboard Icon" class="app-icon">
-    <h1 class="fw-bold">Simple Notes. Redefined.</h1>
-    <p class="fs-4">iOS | iPadOS</p>
-    <br>
-    <br>
-    <button class="download-btn">
-    <a href="https://apps.apple.com/us/app/pinboard-better-notes/id6747376814" target="_blank" rel="noopener noreferrer">Download on App Store</a>
-   
-  </div>
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text fade-in-up">
+        <img src="src/logo.png" alt="Pinboard Icon" class="app-icon floating">
+        <h1 class="hero-title">Simple Notes.<br><span class="text-gradient">Redefined.</span></h1>
+        <p class="hero-subtitle">Experience note-taking like never before on iOS & iPadOS</p>
+        <a href="https://apps.apple.com/us/app/pinboard-better-notes/id6747376814" target="_blank" class="download-btn">
+          <i class="bi bi-apple"></i>
+          Download on App Store
+        </a>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+  </section>
+  
+  <div class="section-transition"></div>
+
+  <section id="screenshots" class="screenshots-section">
+  
+    <div class="parallax-container">
+    
+      <div class="text-reveal-section">
+        <h2 class="reveal-text">Beautiful.</h2>
+        <h2 class="reveal-text">Intuitive.</h2>
+        <h2 class="reveal-text">Yours.</h2>
+      </div>
+      <div class="image-reveal-container">
+        <img src="src/sc1.png" alt="Screenshot 1" class="reveal-image" data-reveal="0">
+        <img src="src/sc2.png" alt="Screenshot 2" class="reveal-image" data-reveal="1">
+        <img src="src/sc3.png" alt="Screenshot 3" class="reveal-image" data-reveal="2">
+      </div>
+    </div>
   </section>
 
- <div class="scroll-down">
-  <a href="#about">
-    <div class="arrow-circle">
-      <svg width="24" height="24" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.646 5.646a.5.5 0 0 1 .708 0L8 11.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-      </svg>
-    </div>
-  </a>
-</div>
-<br>
-<br>
-<br>
-<section id="about">
-  <br>
-</section>
-<section id="photos">
-  <img src="src\sc1.png" alt="Screenshot 1" class="screenshot">
-  <img src="src\sc2.png" alt="Screenshot 2" class="screenshot"> 
-  <img src="src\sc3.png" alt="Screenshot 3" class="screenshot">
-</section>
-<section  class="about-section py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">About Pinboard</h2>
-    <p class="lead mb-3">Pinboard is built entirely with <strong>SwiftUI</strong>, the modern declarative UI framework from Apple.</p>
-    <p class="lead mb-3">Pinboard is fully optimized for <strong>iOS and iPadOS</strong>, providing a seamless experience across all your Apple devices.</p>
-    <p class="lead mb-3">No accounts. No ads. No subscriptions.</p>
-    <p class="lead fw-semibold ">Pinboard is 100% free and always will be.</p>
-
-    <div class="row justify-content-center mt-4">
-      <div class="col-md-4 mb-3">
-        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <img src="src/swiftui.png" alt="SwiftUI Icon" class="mb-3" style="width: 50px; height: 50px;">
-            <h5 class="card-title">Built with SwiftUI</h5>
-            <p class="card-text">Lightweight, fluid, and native to Apple platforms.</p>
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">        <div class="text-content fade-in-left" data-delay="100">
+            <h2 class="section-title">Built with <span class="text-gradient">SwiftUI</span></h2>
+            <p class="section-description">
+              Pinboard is crafted entirely with SwiftUI, Apple's modern declarative UI framework. 
+              This means lightning-fast performance, seamless animations, and a truly native experience 
+              across all your Apple devices.
+            </p>
+            <div class="feature-highlights">
+              <div class="highlight-item" data-delay="300">
+                <i class="bi bi-lightning-charge"></i>
+                <span>Lightning Fast</span>
+              </div>
+              <div class="highlight-item">
+                <i class="bi bi-phone"></i>
+                <span>Native Experience</span>
+              </div>
+             
+            </div>
           </div>
-        </div>
-      </div>
-
-  
-      <div class="col-md-4 mb-3">
-        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <img src="src/free.png" alt="Free Forever Icon" class="mb-3" style="width: 50px; height: 50px;">
-            <h5 class="card-title">Free Forever</h5>
-            <p class="card-text">No tracking, no fees, no compromises. Ever.</p>
+        </div>      
+            <div class="col-lg-6">
+          <div class="image-container fade-in-up" data-delay="300">
+            <img src="src/swiftui.png" alt="SwiftUI" class="floating-image always-visible">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="privacy" class="privacy-section py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Privacy Policy</h2>
-    <p class="lead mb-3">Pinboard puts your privacy first. Always.</p>
-    <p class="mb-4">We don’t collect, store, or transmit any personal data. Everything stays on your device, just as it should.</p>
-    <p class="lead fw-semibold mt-4">There is no account. No syncing. No risk.</p>
-    <div class="row justify-content-center">
-      <div class="col-md-4 mb-3">
-        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <img src="src\user.png" alt="User Icon" class="mb-3" style="width: 50px; height: 50px;">
-            <h5 class="card-title">No Tracking</h5>
-            <p class="card-text">Pinboard doesn’t use analytics, ads, or third-party tracking libraries.</p>
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fade-in-up">Why Choose <span class="text-gradient">Pinboard</span>?</h2>
+        <p class="section-subtitle fade-in-up">Three simple reasons that make all the difference</p>
+      </div>
+      
+      <div class="features-grid">
+        <div class="feature-card fade-in-up" data-delay="0">
+          <div class="feature-icon">
+            <i class="bi bi-currency-dollar"></i>
           </div>
+          <h3>Free Forever</h3>
+          <p>No accounts. No ads. No subscriptions. Pinboard is 100% free and always will be.</p>
+        </div>
+        
+        <div class="feature-card fade-in-up" data-delay="200">
+          <div class="feature-icon">
+            <i class="bi bi-person-fill"></i>
+          </div>
+          <h3>Privacy First</h3>
+          <p>Everything stays on your device. No tracking, no data collection, no compromises.</p>
+        </div>
+        
+        <div class="feature-card fade-in-up" data-delay="400">
+          <div class="feature-icon">
+            <i class="bi bi-universal-access"></i>
+          </div>
+          <h3>Accessible</h3>
+          <p>Built with accessibility in mind, supporting VoiceOver, voice control, and more.</p>
         </div>
       </div>
+    </div>
+  </section>
 
-   
-
-      <div class="col-md-4 mb-3">
-        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <img src="src\user.png" alt="User Icon" class="mb-3" style="width: 50px; height: 50px;">
-            <h5 class="card-title">Nothing Linked to You</h5>
-            <p class="card-text">We don’t store accounts or identifiers. Your usage is completely anonymous.</p>
+  <section id="privacy" class="privacy-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="text-content fade-in-right">
+            <h2 class="section-title">Your Privacy is <span class="text-gradient">Important</span></h2>
+            <p class="section-description">
+              In a world where your data is constantly harvested, Pinboard takes a different approach. 
+              We believe your notes are yours alone.
+            </p>
+            <div class="privacy-features">
+              <div class="privacy-item">
+                <i class="bi bi-shield-check"></i>
+                <div>
+                  <h4>No Tracking</h4>
+                  <p>Zero analytics, ads, or third-party libraries</p>
+                </div>
+              </div>
+              <div class="privacy-item">
+                <i class="bi bi-person-x"></i>
+                <div>
+                  <h4>No Accounts</h4>
+                  <p>No sign-ups, logins, or personal information required</p>
+                </div>
+              </div>
+              <div class="privacy-item">
+                <i class="bi bi-phone"></i>
+                <div>
+                  <h4>On Device Only</h4>
+                  <p>All data stays locally on your device, always</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="image-container fade-in-left">
+            <div class="privacy-visual">
+              <div class="shield-icon">
+                <i class="bi bi-shield-lock"></i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    
-   
-  </div>
-</section>
-<section id="Accessibility" class="privacy-section py-5">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-4">Accessibility</h2>
-    <p class="lead mb-3">Pinboard is designed with accessibility in mind.</p>
-    <p class="mb-4">Pinboard was designed to be used by anyone regardless of disabilities and to provide a seamless experience for all users.</p>
-    <p class="lead fw-semibold mt-4">If there is an accessibility feature you would like , please contact us and we will try to implement it.</p>    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-5 mb-4">        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <i class="bi bi-soundwave text-white mb-3" style="font-size: 50px;"></i>
-            <h5 class="card-title">Voiceover</h5>
-            <p class="card-text">Pinboard is fully compatible with VoiceOver and other screen readers.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5 mb-4">        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <i class="bi bi-mic text-white mb-3" style="font-size: 50px;"></i>
-            <h5 class="card-title">Voice control</h5>
-            <p class="card-text">Pinboard allows you to navigate and control the app using voice commands.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-lg-5 mb-4">        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <i class="bi bi-palette text-white mb-3" style="font-size: 50px;"></i>
-            <h5 class="card-title">Differentiate without color alone</h5>
-            <p class="card-text">Pinboard uses shapes in addition to color to convey information.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 col-lg-5 mb-4">        <div class="card bg-transparent border-light h-100">
-          <div class="card-body text-white">
-            <i class="bi bi-fonts text-white mb-3" style="font-size: 50px;"></i>
-            <h5 class="card-title">Text Size</h5>
-            <p class="card-text">Pinboard allows you to adjust text size for better readability.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-   
-  </div>
-</section>
-<br>
-<br>
-<br>
-<br>
+  </section>
 
-<footer>
-    <div class="container text-center py-4">
-        <p class="text-white mb-0">© 2025 Pinboard. All rights reserved.</p>
-        <p class="text-white mb-0">Made with ❤️ by Josh</p>
-</footer>
+  <section id="accessibility" class="accessibility-section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title fade-in-up">Built for <span class="text-gradient-alt">Everyone</span></h2>
+        <p class="section-subtitle fade-in-up">Accessibility isn't an afterthought. It's fundamental</p>
+      </div>
+      
+      <div class="accessibility-grid">
+        <div class="accessibility-card fade-in-up" data-delay="0">
+          <i class="bi bi-soundwave"></i>
+          <h3>VoiceOver</h3>
+          <p>Full compatibility with screen readers and assistive technologies</p>
+        </div>
+        
+        <div class="accessibility-card fade-in-up" data-delay="150">
+          <i class="bi bi-mic"></i>
+          <h3>Voice Control</h3>
+          <p>Navigate and control the app using voice commands</p>
+        </div>
+        
+        <div class="accessibility-card fade-in-up" data-delay="300">
+          <i class="bi bi-palette"></i>
+          <h3>Visual Clarity</h3>
+          <p>Clear visual indicators that don't rely on color alone</p>
+        </div>
+        
+        <div class="accessibility-card fade-in-up" data-delay="450">
+          <i class="bi bi-fonts"></i>
+          <h3>Dynamic Type</h3>
+          <p>Adjustable text size for optimal readability</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 Pinboard. All rights reserved.</p>
+        <p>Made with ❤️ by Josh</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
